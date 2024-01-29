@@ -1,0 +1,16 @@
+<ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true" [isOpen]="isModalDateOpen" #modal>
+  <ng-template>
+    <ion-datetime id="datetime" presentation="date" #datetime>
+      <ion-buttons slot="buttons">
+        <ion-button color="primary" fill="clear" (click)="closeDateModal()"
+          >Cancel</ion-button
+        >
+        <ion-button color="primary" fill="solid" (click)="confirmDateModal()"
+          >OK</ion-button
+        >
+      </ion-buttons>
+    </ion-datetime>
+  </ng-template>
+</ion-modal>
